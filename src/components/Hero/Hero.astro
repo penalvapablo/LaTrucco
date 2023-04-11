@@ -1,0 +1,30 @@
+---
+import { Image } from '@astrojs/image/components';
+import logo from '../../assets/logo.png';
+import Bottom from './Bottom';
+import Nav from './Nav';
+---
+
+<section
+  class="relative h-[600px] bg-black/40 min-tall-mobile:h-screen">
+  <video
+    autoplay
+    muted
+    loop
+    class="absolute -z-10 h-[600px] object-cover grayscale lg:w-screen min-tall-mobile:h-screen">
+    <source
+      src="/video.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <Nav path={'home'} />
+  <Image
+    alt="logo"
+    src={logo}
+    width={343}
+    height={99}
+    quality={100}
+    class="mx-auto w-[90%] max-w-[750px] pt-16 xl:pt-0"
+  />
+  <Bottom client:load />
+</section>

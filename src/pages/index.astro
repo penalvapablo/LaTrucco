@@ -1,20 +1,10 @@
 ---
+import Hero from '../components/Hero/Hero.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="relative h-screen">
-    <video
-      autoplay
-      muted
-      loop
-      class="absolute -z-10 h-screen object-cover grayscale">
-      <source
-        src="/video.mp4"
-        type="video/mp4"
-      />
-    </video>
-  </main>
+  <Hero />
 </Layout>
 
 <style></style>
