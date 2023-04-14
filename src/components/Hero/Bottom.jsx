@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import TextAndCta from './TextAndCta';
-import Burger from './Burger';
+import Burger from './BurgerHome';
 import MobileNav from './MobileNav';
 
 const Bottom = () => {

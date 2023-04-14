@@ -1,0 +1,64 @@
+---
+import { Image } from '@astrojs/image/components';
+import logo from '../assets/logo.png';
+---
+
+<header
+  class="mx-auto hidden h-32 w-[90%] max-w-[1400px] items-center justify-between bg-black xl:flex">
+  <Image
+    alt="logo"
+    src={logo}
+    width={343}
+    height={99}
+    quality={100}
+    class="w-[300px]"
+  />
+
+  <nav class={`flex items-center`}>
+    <ul class="flex items-center gap-8">
+      <li>
+        <a
+          href="/"
+          class={`font-title text-lg font-bold uppercase text-white hover:text-red duration-200 `}>
+          home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/nosotros"
+          class={`font-title text-lg font-bold uppercase text-white hover:text-red duration-200 
+            }`}>
+          nosotros
+        </a>
+      </li>
+      <li>
+        <a
+          href="/formacion"
+          class={`font-title text-lg font-bold uppercase text-white hover:text-red duration-200`}>
+          formacion
+        </a>
+      </li>
+      <li>
+        <a
+          href="/produccion"
+          class={`font-title text-lg font-bold uppercase text-white hover:text-red duration-200`}>
+          producción de ficción
+        </a>
+      </li>
+      <li>
+        <a
+          href="/espacio"
+          class={`font-title text-lg font-bold uppercase text-white hover:text-red duration-200 `}>
+          nuestro espacio
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contacto"
+          class={`font-title text-lg font-bold uppercase text-white hover:text-red duration-200`}>
+          contacto
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

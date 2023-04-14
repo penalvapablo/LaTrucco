@@ -2,7 +2,7 @@
 import { Image } from '@astrojs/image/components';
 import logo from '../../assets/logo.png';
 import Bottom from './Bottom';
-import Nav from './Nav';
+import NavHome from './NavHome.astro';
 ---
 
 <section
@@ -17,7 +17,7 @@ import Nav from './Nav';
       type="video/mp4"
     />
   </video>
-  <Nav path={'home'} />
+  <NavHome  />
   <Image
     alt="logo"
     src={logo}

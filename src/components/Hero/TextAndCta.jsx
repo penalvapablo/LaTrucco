@@ -3,8 +3,8 @@ import React from 'react';
 const TextAndCta = ({ mobileNav }) => {
   return (
     <div
-      className={`absolute bottom-20 flex flex-col items-center gap-7 duration-300 ${
-        mobileNav && 'scale-0'
+      className={`absolute bottom-20 flex flex-col items-center gap-7 duration-500 ${
+        mobileNav && 'opacity-0'
       } sm:bottom-52 xl:bottom-28`}>
       <p className=" max-w-2xl text-center font-text text-lg font-medium text-white">
         Únete a nuestra comunidad de intérpretes y empieza a
