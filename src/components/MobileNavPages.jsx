@@ -4,9 +4,11 @@ import React from 'react';
 const MobileNavPages = ({ mobileNav }) => {
   return (
     <div
-      className={`  absolute bottom-0 z-10  mb-[55px] flex h-[calc(100vh-55px)] w-screen flex-col items-center  justify-center gap-9 bg-black text-center font-title text-lg font-bold uppercase text-white opacity-0  transition-opacity duration-300 ease-out ${
-        mobileNav && ' opacity-100'
-      } xl:hidden `}>
+      className={`  absolute bottom-0 z-10  mb-[55px] flex h-[calc(100vh-55px)] w-screen flex-col items-center  justify-center gap-9 bg-black text-center font-title text-lg font-bold uppercase text-white  duration-300  ${
+        !mobileNav
+          ? 'invisible opacity-0'
+          : 'visible opacity-100'
+      }  `}>
       <img
         src={'/logo.png'}
         alt="Logo"
@@ -14,7 +16,7 @@ const MobileNavPages = ({ mobileNav }) => {
         className=""
       />
       <nav>
-        <ul className="gap flex flex-col gap-4">
+        <ul className=" flex flex-col gap-4">
           <li>
             <a href="/">home</a>
           </li>

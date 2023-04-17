@@ -1,0 +1,50 @@
+---
+import CursosYTalleres from './CursosYTalleres.astro';
+---
+
+<main
+  class="relative min-h-screen bg-black px-[5%] pb-40 pt-20">
+  <h1
+    class="mx-auto mb-10 max-w-[800px] text-center font-title text-5xl font-bold uppercase tracking-tighter text-red drop-shadow-3xl xsm:text-7xl sm:text-8xl md:text-left md:text-8xl">
+    formación
+  </h1>
+  <p
+    class="mx-auto mb-10 max-w-[800px] font-text text-lg text-white">
+    Los cursos y talleres de La Trucco están dirigidos a
+    todas las personas que quieran ser parte del mundo de la
+    interpretación.<br /><br /> Para lograrlo, hemos diseñado
+    diferentes planes de estudios que abordan teoría, técnicas
+    de interpretación, improvisación, entrenamiento corporal,
+    técnicas vocales, análisis de texto, entre otros. Los mismos
+    están adaptados al recorrido personal de cada alumno para
+    que pueda obtener herramientas que potencien sus habilidades
+    e identidad artística.<br /><br /> Creemos que los intérpretes
+    pueden encontrar su lugar dentro de la industria a través
+    de la autogestión. En nuestro estudio te acompañamos en ese
+    proceso para que puedas crear tus propios proyectos artísticos.<br
+    /><br /> En La Trucco formamos intérpretes dúctiles que puedan
+    abordar personajes de cualquier género con verdad y organicidad.
+  </p>
+  <h2
+    class="mb-10 text-center font-title text-6xl font-bold tracking-tighter text-red drop-shadow-3xl md:text-8xl">
+    Diplomaturas
+  </h2>
+  <div
+    class="mb-10 flex w-full flex-col items-center gap-8 md:flex-row md:justify-center">
+    <a
+      href="/formacion/inicial"
+      class="flex h-36 w-full max-w-[22rem] items-center justify-center rounded-full bg-purple text-center font-title text-2xl font-bold uppercase leading-6 text-white duration-300 hover:bg-white hover:text-purple"
+      >interpretación <br /> nivel inicial</a
+    >
+    <a
+      href="/formacion/avanzado"
+      class="flex h-36 w-full max-w-[22rem] items-center justify-center rounded-full bg-avanzado text-center font-title text-2xl font-bold uppercase leading-6 text-white duration-300 hover:bg-white hover:text-avanzado"
+      >interpretación <br /> nivel avanzado</a
+    >
+  </div>
+  <h2
+    class="mb-10 text-center font-title text-6xl font-bold tracking-tighter text-red drop-shadow-3xl md:text-8xl">
+    Cursos y talleres
+  </h2>
+  <CursosYTalleres />
+</main>

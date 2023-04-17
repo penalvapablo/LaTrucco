@@ -16,11 +16,16 @@ module.exports = {
       improvisacion: '#354D77',
       corto: '#60498A',
     },
+    screens: {
+      xsm: '475px',
+      ...defaultTheme.screens,
+      wide: '1980px',
+    },
     extend: {
+      dropShadow: {
+        '3xl': '-5px 5px 3px rgba(92, 22, 230, 0.25)',
+      },
       screens: {
-        xsm: '475px',
-        ...defaultTheme.screens,
-        wide: '1980px',
         'min-tall-mobile': { raw: '(min-height: 600px)' },
       },
       fontFamily: {

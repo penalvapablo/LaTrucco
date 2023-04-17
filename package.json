@@ -13,7 +13,6 @@
     "@astrojs/image": "^0.16.5",
     "@astrojs/react": "^2.1.1",
     "@astrojs/tailwind": "^3.1.1",
-    "@fontsource/league-spartan": "^4.5.13",
     "@fontsource/poppins": "^4.5.10",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -27,6 +26,7 @@
   },
   "devDependencies": {
     "prettier": "^2.8.7",
+    "prettier-plugin-astro": "^0.8.0",
     "prettier-plugin-tailwindcss": "^0.2.7"
   }
 }

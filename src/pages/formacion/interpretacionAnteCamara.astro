@@ -1,0 +1,13 @@
+---
+import Burger from '../../components/BurgerPages';
+import CursoInterpretacionCamara from '../../components/Formacion/Cursos/CursoInterpretacionCamara.astro';
+import NavPages from '../../components/NavPages.astro';
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Curso trimestral de interpreación ante cámara - La Trucco">
+  <NavPages />
+  <CursoInterpretacionCamara />
+  <Burger client:load />
+</Layout>

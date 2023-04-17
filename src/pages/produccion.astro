@@ -1,0 +1,13 @@
+---
+import Burger from '../components/BurgerPages';
+import NavPages from '../components/NavPages.astro';
+import ProduccionSection from '../components/ProduccionSection.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Producción de ficción - La Trucco">
+  <NavPages />
+
+  <ProduccionSection />
+  <Burger client:load />
+</Layout>

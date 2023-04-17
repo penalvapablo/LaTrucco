@@ -11,7 +11,7 @@ const BurgerPages = () => {
   };
 
   return (
-    <div className="fixed bottom-0 left-1/2 flex w-full translate-x-[-50%] justify-center bg-purple ">
+    <div className="fixed bottom-0 flex w-full  justify-center bg-purple xl:hidden">
       {' '}
       {/* {mobileNav && ( */}
       <MobileNavPages mobileNav={mobileNav} />
@@ -20,7 +20,7 @@ const BurgerPages = () => {
         onClick={mobileNavFn}
         id="burger menu"
         aria-label="burger menu"
-        className="xl:hidden">
+        className="">
         <FontAwesomeIcon
           icon={faBars}
           className="z-30 h-[35px] w-[35px]  p-[8px] text-white"

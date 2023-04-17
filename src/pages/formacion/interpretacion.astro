@@ -1,13 +1,13 @@
 ---
 import Burger from '../../components/BurgerPages';
-import Formacion from '../../components/Formacion/Formacion.astro';
 import NavPages from '../../components/NavPages.astro';
 import Layout from '../../layouts/Layout.astro';
+import Interpretacion from '../../components/Formacion/Cursos/CursoInterpretacion.astro';
 ---
 
-<Layout title="Formación - La Trucco">
+<Layout
+  title="Curso trimestral de interpretación - La Trucco">
   <NavPages />
-
-  <Formacion />
+  <Interpretacion />
   <Burger client:load />
 </Layout>
