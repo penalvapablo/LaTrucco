@@ -1,37 +1,13 @@
 ---
 import Burger from '../components/BurgerPages';
 import NavPages from '../components/NavPages.astro';
+import NosotrosSection from '../components/NosotrosSection.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Sobre Nosotros">
   <NavPages />
+  <NosotrosSection />
 
-  <main
-    class="relative min-h-screen bg-black px-[5%] pb-14 pt-20 lg:min-h-[calc(100vh-128px)] lg:pb-4">
-    <h1
-      class="mx-auto mb-10 max-w-[800px] text-center font-title text-5xl font-bold uppercase tracking-tighter text-red drop-shadow-3xl xsm:text-7xl sm:text-8xl md:text-left md:text-8xl">
-      NOSOTROS
-    </h1>
-    <p
-      class="mx-auto mb-10 max-w-[800px] font-text text-lg text-white">
-      La Trucco es un estudio de formación de intérpretes
-      que nace en 2022 con el objetivo brindar una formación
-      integral a personas con y sin experiencia en el mundo
-      de la interpretación.<br /><br /> También somos un espacio
-      de creación de ficciones, donde desarrollamos proyectos
-      audiovisuales (cortometrajes, series, mini series, etc)
-      con productoras locales para que nuestros alumnos puedan
-      poner en práctica lo aprendido.<br /><br /> En la actualidad,
-      se requieren cada vez más habilidades para realizar tu
-      arte. Nosotros podemos brindarte todos esos trucos y el
-      acompañamiento que necesitas para lograrlo.
-    </p>
-
-    <p
-      class="mb-10 text-center font-text text-3xl text-red">
-      Bienvenid@s a La Trucco
-    </p>
-  </main>
   <Burger client:load />
 </Layout>
