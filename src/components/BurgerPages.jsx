@@ -9,9 +9,15 @@ const BurgerPages = () => {
     setMobileNav(!mobileNav);
     console.log('asddas');
   };
+  // Preven scrolling when mobile nav activated
+  if (typeof window !== 'undefined') {
+    mobileNav
+      ? (document.body.style.overflow = 'hidden')
+      : (document.body.style.overflow = 'auto');
+  }
 
   return (
-    <div className="fixed bottom-0 flex w-full  justify-center bg-purple xl:hidden">
+    <div className="absolute top-5  z-40 flex w-full  justify-center  xl:hidden">
       {' '}
       {/* {mobileNav && ( */}
       <MobileNavPages mobileNav={mobileNav} />

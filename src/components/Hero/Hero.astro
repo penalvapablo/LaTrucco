@@ -1,6 +1,6 @@
 ---
 import { Image } from '@astrojs/image/components';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/Logo-LaTrucco.png';
 import Bottom from './Bottom';
 import NavHome from './NavHome.astro';
 ---
@@ -17,14 +17,14 @@ import NavHome from './NavHome.astro';
       type="video/mp4"
     />
   </video>
-  <NavHome  />
+  <NavHome />
   <Image
     alt="logo"
     src={logo}
-    width={343}
-    height={99}
+    width={750}
+    height={217.35}
     quality={100}
-    class="mx-auto w-[90%] max-w-[750px] pt-16 xl:pt-0"
+    class="mx-auto w-[90%] max-w-[750px] pt-24 xl:pt-0"
   />
   <Bottom client:load />
 </section>

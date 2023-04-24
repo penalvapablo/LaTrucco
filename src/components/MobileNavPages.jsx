@@ -4,7 +4,7 @@ import React from 'react';
 const MobileNavPages = ({ mobileNav }) => {
   return (
     <div
-      className={`  absolute bottom-0 z-10  mb-[55px] flex h-[calc(100vh-55px)] w-screen flex-col items-center  justify-center gap-9 bg-black text-center font-title text-lg font-bold uppercase text-white  duration-300  ${
+      className={`absolute top-0 z-10  mt-[55px] flex h-[calc(100vh-55px)] w-screen flex-col items-center  justify-center gap-9 bg-black text-center font-title text-lg font-bold uppercase text-white  duration-300  ${
         !mobileNav
           ? 'invisible opacity-0'
           : 'visible opacity-100'

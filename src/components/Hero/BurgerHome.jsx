@@ -11,7 +11,7 @@ const Burger = ({ mobileNavFn }) => {
       className="xl:hidden">
       <FontAwesomeIcon
         icon={faBars}
-        className=" h-[35px] w-[35px] rounded-full  p-2 text-white"
+        className=" absolute left-1/2 top-5 h-[35px] w-[35px] translate-x-[-50%] rounded-full  p-[8px] text-white"
       />
     </button>
   );

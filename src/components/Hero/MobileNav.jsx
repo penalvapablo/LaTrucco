@@ -3,8 +3,10 @@ import React from 'react';
 const MobileNav = ({ mobileNav }) => {
   return (
     <nav
-      className={`absolute bottom-20 flex w-screen justify-center  text-center font-title text-lg font-bold uppercase text-white duration-500 sm:bottom-52 ${
-        !mobileNav && 'opacity-0'
+      className={`absolute bottom-20 flex w-screen justify-center  text-center font-title text-lg font-bold uppercase text-white duration-500  ${
+        !mobileNav
+          ? 'invisible opacity-0'
+          : 'visible opacity-100'
       } `}>
       <ul className="gap flex flex-col gap-4">
         <li>
