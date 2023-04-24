@@ -10,15 +10,15 @@ const TextAndCta = ({ mobileNav }) => {
       } 
       }  xl:bottom-28`}>
       <p className=" max-w-2xl text-center font-text text-lg font-medium text-white">
-        Únete a nuestra comunidad de intérpretes y empieza a
-        desarrollar tus habilidades artísticas con nuestros
-        cursos y talleres
+        Únete a nuestra comunidad y comienza a desarrollar
+        tus proyectos artísticos con nuestros cursos y
+        talleres
       </p>
 
       <a
         href="/formacion"
-        className="rounded-full bg-purple px-9 py-2 font-text text-lg text-white ">
-        Empieza tu formación
+        className=" animate-[wiggle_1s_ease-in-out_infinite] rounded-full bg-purple px-9 py-2 font-text text-lg text-white ">
+        Sumate a La Trucco
       </a>
     </div>
   );
