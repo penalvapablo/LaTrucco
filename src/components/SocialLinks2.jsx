@@ -65,7 +65,10 @@ const SocialLinks2 = () => {
       </a> */}
 
       <a
-        href="mailto:info.latrucco@gmail.com"
+        href="https://www.google.com/maps/place/C.+Costa,+3,+48010+Bilbao,+Vizcaya,+Espa%C3%B1a/@43.2585329,-2.9352508,16.25z/data=!4m6!3m5!1s0xd4e4fd6822b2e89:0x2cdcacc81247f21d!8m2!3d43.2582761!4d-2.9347524!16s%2Fg%2F11csffd3md"
+        rel="noreferrer"
+        target="_blank"
+        aria-label="link to googlemaps"
         className=" hover:text- flex w-fit flex-col items-center gap-3 duration-300 hover:text-red  xsm:flex-row xsm:gap-12 ">
         <FontAwesomeIcon
           icon={faLocationDot}
