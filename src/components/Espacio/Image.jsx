@@ -1,7 +1,6 @@
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useEffect, useState } from 'react';
 
 const Image = ({
   id,
@@ -40,23 +39,23 @@ const Image = ({
                 onClick={rightFn}
                 id="close-modal"
                 aria-label="close-modal">
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  className={`absolute right-5  top-1/2 h-12 translate-y-[-50%] rounded-full text-white ${
-                    modalId === 9 && 'hidden'
-                  }`}
-                />
+                {modalId != 9 && (
+                  <FontAwesomeIcon
+                    icon={faChevronRight}
+                    className={`absolute right-5  top-1/2 h-12 translate-y-[-50%] rounded-full text-white`}
+                  />
+                )}
               </button>
               <button
                 onClick={leftFn}
                 id="close-modal"
                 aria-label="close-modal">
-                <FontAwesomeIcon
-                  icon={faChevronLeft}
-                  className={`absolute left-5  top-1/2 z-30 h-12 translate-y-[-50%] rounded-full text-white ${
-                    modalId === 1 && 'hidden'
-                  }`}
-                />
+                {modalId != 1 && (
+                  <FontAwesomeIcon
+                    icon={faChevronLeft}
+                    className={`absolute left-5  top-1/2 z-30 h-12 translate-y-[-50%] rounded-full text-white `}
+                  />
+                )}
               </button>
               <img
                 src={`/galeria/img${modalId}-big.png`}

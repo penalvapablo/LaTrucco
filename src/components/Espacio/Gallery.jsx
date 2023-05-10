@@ -11,7 +11,6 @@ const Gallery = () => {
     if (e.type === 'keydown') {
       return;
     }
-
     setModal(!modal);
     setModalId(e.target.id);
     if (typeof window !== 'undefined') {
@@ -21,20 +20,29 @@ const Gallery = () => {
     }
   };
   const rightFn = () => {
-    if (modalId === 9) return;
-    setModalId(Number(modalId) + 1);
+    console.log(modalId);
+    if (modalId === 9) {
+      setModalId(Number(modalId) + 1);
+    }
   };
 
   const leftFn = () => {
-    if (modalId === 1) return;
-    setModalId(Number(modalId) - 1);
+    if (modalId != 1) {
+      setModalId(Number(modalId) - 1);
+    }
   };
 
   useEffect(() => {
+    console.log(modalId);
     const handleKeyDown = (e) => {
       if (modal === true) {
         if (e.key === 'Escape') {
           setModal(false);
+          if (typeof window !== 'undefined') {
+            !modal
+              ? (document.body.style.overflow = 'hidden')
+              : (document.body.style.overflow = 'auto');
+          }
         }
         if (e.key === 'ArrowRight') {
           rightFn();
@@ -69,114 +77,6 @@ const Gallery = () => {
           </div>
         );
       })}
-      {/* <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img1.webp`}
-          />
-          <img
-            src={`/galeria/img1.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture>
-        <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img2.webp`}
-          />
-          <img
-            src={`/galeria/img2.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture>{' '}
-        <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img3.webp`}
-          />
-          <img
-            src={`/galeria/img3.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture>{' '}
-        <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img4.webp`}
-          />
-          <img
-            src={`/galeria/img4.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture>{' '}
-        <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img5.webp`}
-          />
-          <img
-            src={`/galeria/img5.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture>{' '}
-        <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img6.webp`}
-          />
-          <img
-            src={`/galeria/img6.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture>{' '}
-        <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img7.webp`}
-          />
-          <img
-            src={`/galeria/img7.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture>{' '}
-        <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img8.webp`}
-          />
-          <img
-            src={`/galeria/img8.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture>{' '}
-        <picture>
-          <source
-            type="image/webp"
-            srcSet={`/galeria/img9.webp`}
-          />
-          <img
-            src={`/galeria/img9.png`}
-            alt=" "
-            loading="lazy"
-            className=""
-          />
-        </picture> */}
     </div>
   );
 };
