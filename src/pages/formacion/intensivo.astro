@@ -1,0 +1,13 @@
+---
+import Burger from '../../components/BurgerPages';
+import NavPages from '../../components/NavPages.astro';
+import Layout from '../../layouts/Layout.astro';
+import Intensivo from '../../components/Formacion/Cursos/Intensivo.astro';
+---
+
+<Layout
+  title="Interpretación avanzado intensivo - La Trucco">
+  <NavPages />
+  <Intensivo />
+  <Burger client:load />
+</Layout>

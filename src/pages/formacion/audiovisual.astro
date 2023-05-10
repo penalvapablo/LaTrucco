@@ -1,0 +1,12 @@
+---
+import Burger from '../../components/BurgerPages';
+import NavPages from '../../components/NavPages.astro';
+import Layout from '../../layouts/Layout.astro';
+import Audiovisual from '../../components/Formacion/Cursos/Audiovisual.astro';
+---
+
+<Layout title="Audiovisual - La Trucco">
+  <NavPages />
+  <Audiovisual />
+  <Burger client:load />
+</Layout>

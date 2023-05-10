@@ -15,6 +15,8 @@ module.exports = {
       camara: '#993783',
       improvisacion: '#354D77',
       corto: '#60498A',
+      intensivo: '#346A6D',
+      audiovisual: '#D77400',
     },
     screens: {
       xsm: '475px',

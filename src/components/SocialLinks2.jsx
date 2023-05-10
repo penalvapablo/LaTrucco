@@ -25,7 +25,7 @@ const SocialLinks2 = () => {
         </p>
       </a>
       <a
-        href="tel:+34664196715"
+        href="tel:+34946081947"
         rel="noreferrer"
         aria-label="link to whatsapp"
         className=" flex w-fit  flex-col  items-center gap-3 duration-300 hover:text-red xsm:flex-row xsm:gap-12  ">
@@ -34,11 +34,11 @@ const SocialLinks2 = () => {
           className="h-11"
         />
         <p className="font-text text-xl">
-          +34 664 19 67 15
+          +34 946 08 19 47
         </p>
       </a>
       <a
-        href="https://api.whatsapp.com/send?phone=34664196715"
+        href="https://api.whatsapp.com/send?phone=34747488165"
         rel="noreferrer"
         target="_blank"
         aria-label="link to whatsapp"
@@ -47,9 +47,7 @@ const SocialLinks2 = () => {
           icon={faWhatsapp}
           className="h-12"
         />
-        <p className="font-text text-xl">
-          +34 664 19 67 15
-        </p>
+        <p className="font-text text-xl">+34 747 488 165</p>
       </a>
       {/* <a
         href="https://www.instagram.com/latrucco_ok/"

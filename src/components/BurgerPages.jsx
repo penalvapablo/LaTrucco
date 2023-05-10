@@ -17,11 +17,8 @@ const BurgerPages = () => {
   }
 
   return (
-    <div className="absolute top-5  z-40 flex w-full  justify-center  xl:hidden">
-      {' '}
-      {/* {mobileNav && ( */}
+    <div className="absolute top-5  z-30 flex w-full  justify-center  xl:hidden">
       <MobileNavPages mobileNav={mobileNav} />
-      {/* )} */}
       <button
         onClick={mobileNavFn}
         id="burger menu"

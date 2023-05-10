@@ -1,0 +1,13 @@
+---
+import Burger from '../components/BurgerPages';
+import EspacioSection from '../components/Espacio/EspacioSection.astro';
+import NavPages from '../components/NavPages.astro';
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Sobre Nosotros">
+  <NavPages />
+  <EspacioSection />
+  <Burger client:load />
+</Layout>
