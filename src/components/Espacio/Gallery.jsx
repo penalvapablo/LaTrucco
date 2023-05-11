@@ -20,8 +20,7 @@ const Gallery = () => {
     }
   };
   const rightFn = () => {
-    console.log(modalId);
-    if (modalId === 9) {
+    if (modalId != 9) {
       setModalId(Number(modalId) + 1);
     }
   };
@@ -33,7 +32,6 @@ const Gallery = () => {
   };
 
   useEffect(() => {
-    console.log(modalId);
     const handleKeyDown = (e) => {
       if (modal === true) {
         if (e.key === 'Escape') {
