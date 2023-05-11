@@ -60,7 +60,7 @@ const Image = ({
               <img
                 src={`/galeria/img${modalId}-big.png`}
                 alt=" "
-                loading="lazy"
+                // loading="lazy"
                 className="  rounded-xl"
               />
             </div>
