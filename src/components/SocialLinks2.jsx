@@ -49,18 +49,6 @@ const SocialLinks2 = () => {
         />
         <p className="font-text text-xl">+34 747 488 165</p>
       </a>
-      {/* <a
-        href="https://www.instagram.com/latrucco_ok/"
-        rel="noreferrer"
-        target={'_blank'}
-        aria-label="link a instagram"
-        className=" hover:text- flex w-fit flex-col items-center gap-3 duration-300 hover:text-red  xsm:flex-row xsm:gap-12 ">
-        <FontAwesomeIcon
-          icon={faInstagram}
-          className="h-12"
-        />
-        <p className="font-text text-xl">latrucco_ok</p>
-      </a> */}
 
       <a
         href="https://www.google.com/maps/place/C.+Costa,+3,+48010+Bilbao,+Vizcaya,+Espa%C3%B1a/@43.2585329,-2.9352508,16.25z/data=!4m6!3m5!1s0xd4e4fd6822b2e89:0x2cdcacc81247f21d!8m2!3d43.2582761!4d-2.9347524!16s%2Fg%2F11csffd3md"
@@ -73,7 +61,7 @@ const SocialLinks2 = () => {
           className="h-11 px-1"
         />
         <p className="pl-1 font-text text-xl">
-          Costa Kalea 3 - Piso 6
+          Costa Kalea 12 - Piso 6
         </p>
       </a>
     </div>
