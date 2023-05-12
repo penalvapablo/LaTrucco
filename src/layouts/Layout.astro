@@ -3,6 +3,7 @@ export interface Props {
   title: string;
 }
 import '@fontsource/poppins';
+import Copyright from '../components/Copyright.astro';
 
 const { title } = Astro.props;
 ---
@@ -26,8 +27,9 @@ const { title } = Astro.props;
     />
     <title>{title}</title>
   </head>
-  <body class="relative bg-black">
+  <body class={`relative min-h-screen bg-black`}>
     <slot />
+    {title != 'La Trucco' && <Copyright />}
   </body>
 </html>
 <style is:global>
