@@ -57,12 +57,24 @@ const Image = ({
                   />
                 )}
               </button>
-              <img
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet={`/galeria/img${modalId}-big.webp`}
+                />
+                <img
+                  src={`/galeria/img${modalId}-big.png`}
+                  alt=" "
+                  loading="lazy"
+                  className="rounded-xl"
+                />
+              </picture>
+              {/* <img
                 src={`/galeria/img${modalId}-big.png`}
                 alt=" "
                 // loading="lazy"
                 className="  rounded-xl"
-              />
+              /> */}
             </div>
           </>
         )}
